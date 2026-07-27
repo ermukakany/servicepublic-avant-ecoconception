@@ -34,11 +34,11 @@ jobs:
 
       - name: Installer le serveur
         run: |
-          npm install -g http-server
+          npm install http-server
 
       - name: Lancer le serveur local
         run: |
-          http-server . -p 8080 &
+          npx http-server . -p 8080 &
           sleep 5
 
       - name: Mesurer avec EcoIndex
